@@ -1,6 +1,12 @@
 {
+  "homepage": "https://kazza559.github.io/pug-project/",
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "pug": "^3.0.2",
     "pug-cli": "^1.0.0-alpha6"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
