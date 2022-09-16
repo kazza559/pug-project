@@ -1,0 +1,229 @@
+extends layout.pug 
+block scripts
+  include head.pug
+
+block content 
+  header(id="header" class="header fixed-top")
+    .container.d-flex.justify-content-between
+      .logo
+        h2(class="text-uppercase")= title
+      nav(class="navbar navbar-expand-lg")
+        button(class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation")
+          span(class="navbar-toggler-icon")
+        .collapse.navbar-collapse
+          ul(class="navbar-nav") 
+            li(class="nav-item")
+              a(class="nav-link" href="#") Home
+            li(class="nav-item")
+              a(class="nav-link" href="#") About
+            li(class="nav-item") 
+              a(class="nav-link" href="#") Services
+            li(class="nav-item") 
+              a(class="nav-link" href="#") Portfolio
+            li(class="nav-item") 
+              a(class="nav-link" href="#") Team
+            li(class="nav-item")
+              a(class="nav-link" href="#") Dropdown
+            li(class="nav-item") 
+              a(class="nav-link" href="#") Contact
+            li(class="ms-4 nav-item btn btn-outline-primary")
+              a(class="nav-link p-0" href="#") Get Started
+  section(class="section-heading d-flex align-items-center")
+    .container-fluid 
+      .row.justify-content-center 
+        .col-lg-6.col-xl-5.d-flex.flex-column.justify-content-center
+          h1.title Better Digital Experience With Techie 
+          h2.description We are team of talented designers making websites with Bootstrap
+          .d-inline-block.btn.btn-outline-primary.w-25.mt-2
+            a(class="p-1 nav-link" href="#") Get Started
+        .col-lg-6.col-xl-4
+          img(src="../assets/images/hero-img.png" class="img-fluid" alt="heading right")
+  main(class="main")
+    .main-content
+      .container-fluid
+        .row.justify-content-center 
+          .col-lg-6.col-xl-5.d-flex.flex-column.justify-content-center
+            h3.title Voluptatem dignissimos provident quasi corporis
+            p.sub-title.fst-italic Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            .description-wrapper 
+              i(class="bi bi-check-circle")
+              span(class="content") Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            .description-wrapper 
+              i(class="bi bi-check-circle")
+              span(class="content") Duis aute irure dolor in reprehenderit in voluptate velit.
+            .description-wrapper 
+              i(class="bi bi-check-circle")
+              span(class="content") Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.
+            .d-inline-block.btn.btn-outline-primary.w-25.mt-2
+              a(class="p-1 nav-link" href="#") Read More
+          .col-lg-6.col-xl-4
+            img(src="../assets/images/about.jpg" class="img-fluid" alt="about img")
+    .count-container#count
+      .container 
+        .row 
+          .col-6.col-lg-3.text-center
+            span(class="counter") 11
+            p Clients
+          .col-6.col-lg-3.text-center
+            span(class="counter") 22
+            p Projects
+          .col-6.col-lg-3.text-center
+            span(class="counter") 33
+            p Hours of support
+          .col-6.col-lg-3.text-center
+            span(class="counter") 44
+            p Hard work
+    .services 
+      .container 
+        .service-title 
+          h2.title Services
+          .content Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+        .row 
+          .col-lg-4.col-md-6.service-item-wrapper
+            .service-item 
+              .service-icon
+                i(class="bx bxl-dribbble")
+              .service-title Lorem ipsum
+              .service-content Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+          .col-lg-4.col-md-6.service-item-wrapper
+            .service-item 
+              .service-icon
+                i(class="bx bx-file")
+              .service-title Sed Perspiciatis
+              .service-content Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+          .col-lg-4.col-md-6.service-item-wrapper
+            .service-item 
+              .service-icon
+                i(class="bx bx-tachometer")
+              .service-title Magni Dolores
+              .service-content Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+          .col-lg-4.col-md-6.service-item-wrapper
+            .service-item 
+              .service-icon
+                i(class="bx bx-layer")
+              .service-title Nemo Enim
+              .service-content At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+          .col-lg-4.col-md-6.service-item-wrapper
+            .service-item 
+              .service-icon
+                i(class="bx bx-slideshow")
+              .service-title Dele Cardo
+              .service-content Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur
+          .col-lg-4.col-md-6.service-item-wrapper
+            .service-item 
+              .service-icon
+                i(class="bx bx-arch")
+              .service-title Divera Don
+              .service-content Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur
+    .features 
+      .container 
+        .feature-title 
+          h2.title FEATURES
+          .content Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+        .row 
+          .col-lg-6
+            .feature-item 
+              i(class="bx bx-receipt") 
+              h4 Est labore ad
+              p Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip
+            .feature-item.mt-5
+              i(class="bx bx-cube-alt")
+              h4 Harum esse qui
+              p Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            .feature-item.mt-5
+              i(class="bx bx-images")
+              h4 Aut occaecati
+              p Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere
+            .feature-item.mt-5.ms-3
+              i(class="bx bx-shield")
+              h4 Beatae veritatis
+              p Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta
+          .col-lg-6.image
+            img(src="../assets/images/features.svg" class="img-fluid" alt="feature-img")
+    .testimonials
+      .container 
+        .testimonial-title 
+          h2.title TESTIMONIAL
+          .content Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+        .testimonial-content
+          .row 
+            .col-lg-4     
+              .testimonial-item
+                p
+                  i(class="bx bxs-quote-alt-left quote-icon-left")
+                  span Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  i(class="bx bxs-quote-alt-right quote-icon-right")
+                img(src="../assets/images/testimonials/testimonials-5.jpg" class="testimonial-img" alt="")
+                h3 Saul Goodman
+                h4 Lawyer
+            .col-lg-4     
+              .testimonial-item
+                p
+                  i(class="bx bxs-quote-alt-left quote-icon-left")
+                  span Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  i(class="bx bxs-quote-alt-right quote-icon-right")
+                img(src="../assets/images/testimonials/testimonials-1.jpg" class="testimonial-img" alt="")
+                h3 Walter White
+                h4 Teacher
+            .col-lg-4     
+              .testimonial-item
+                p
+                  i(class="bx bxs-quote-alt-left quote-icon-left")
+                  span Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  i(class="bx bxs-quote-alt-right quote-icon-right")
+                img(src="../assets/images/testimonials/testimonials-4.jpg" class="testimonial-img" alt="")
+                h3 Jesse Pinkman
+                h4 CEO
+    .contact 
+      .container 
+        .contact-title 
+          h2.title CONTACT
+          .content Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+        .contact-content
+          .row 
+            .col-lg-6 
+              .info-box.mb-4 
+                i.bx.bx-map 
+                h3 Our Address
+                p A108 Adam Street, New York, NY 535022
+            .col-lg-3.col-md-6
+              .info-box.mb-4 
+                i.bx.bx-envelope 
+                h3 Email Us
+                p contact@example.com
+            .col-lg-3.col-md-6
+              .info-box.mb-4 
+                i.bx.bx-phone-call 
+                h3 Call Us
+                p +1 5589 55488 55
+          .row 
+            .col-lg-6 
+              iframe(class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen)
+            .col-lg-6 
+              form(action="" class="form") 
+                .row 
+                  .col-md-6.form-group
+                    input(type="text" class="form-control" placeholder="Your Name")
+                  .col-md-6.form-group.mt-3.mt-md-0
+                    input(type="email" class="form-control" placeholder="Your Email")
+                .form-group.mt-3
+                  input( type="text" class="form-control" placeholder="Subject")
+                .form-group.mt-3
+                  textarea(class="form-control" name="message" rows="5" placeholder="Message")
+                .text-center.mt-3
+                  button(type="submit") Send Message
+  footer 
+    .container 
+        .row
+            .col-lg-5.footer-newsletter
+              h4 Join Our Newsletter
+              p Tamen quem nulla quae legam multos aute sint culpa legam noster magna
+              form
+                input(type="email" name="email")
+                input(type="submit" value="Subscribe")
+            .col-lg-7.social-links.text-end
+              i(class="bx bxl-twitter")
+              i(class="bx bxl-facebook")
+              i(class="bx bxl-instagram")
+              i(class="bx bxl-skype")
+              i(class="bx bxl-linkedin")
